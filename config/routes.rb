@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  devise for :users
+  
+  get 'employee/info'
   get 'homes/index'
-  root " homes#index"
-    
+  root "homes#index"
+  devise_for :users
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
